@@ -689,6 +689,16 @@
       "address": "0x570F86D85909be8E492F8B8026c0a9D750A70Fea",
       "txHash": "0xd7514129c7f93b61169d96685a1e6d37c0882f1ac65453fae1b159be89ac777e",
       "kind": "transparent"
+    },
+    {
+      "address": "0x8737A7b11Ea2e41a816AE882210B3D32130cdD1a",
+      "txHash": "0x2f51aba5db86cbba07e5cf470df26acba1e4c08244e904ff8f22581c8fcd9a68",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xb9EC998E9A9021BDF6aCC3168176765FFF63F488",
+      "txHash": "0x82ffb1e9b3e172c37ce54a09dc4d8a533308f51d6bacbd4ed45342aa89e322a6",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -24164,6 +24174,370 @@
           },
           "t_array(t_uint256)49_storage": {
             "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "ed323cdfc6250beaddce04f278bea475a5b70f81cf3238f143487d636e148a4b": {
+      "address": "0x875C44d162f5E9a5A40A5891A64fC91d0206bC94",
+      "txHash": "0xd22ce026c1061c1d9c9c32ba277e02d9fa4f02811c02a4ec566c6e52ed1ab810",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol:61"
+          },
+          {
+            "contract": "ContextUpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\GSN\\Context.sol:37"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:37"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:39"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:41"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:43"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:44"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:45"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)44_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:317"
+          },
+          {
+            "contract": "OwnableUpgradeSafe",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\access\\Ownable.sol:18"
+          },
+          {
+            "contract": "OwnableUpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\access\\Ownable.sol:78"
+          },
+          {
+            "contract": "DebtToken",
+            "label": "timelock",
+            "type": "t_address",
+            "src": "solidity\\contracts\\6\\protocol\\DebtToken.sol:28"
+          },
+          {
+            "contract": "DebtToken",
+            "label": "okHolders",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "solidity\\contracts\\6\\protocol\\DebtToken.sol:28"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_array(t_uint256)44_storage": {
+            "label": "uint256[44]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "4de058f3df68c131257af2238dc888ede1b72d10fd291d30d1296bcd0b29e7da": {
+      "address": "0x7f453Fd82DeBf121fbAe3C6DD7aC734c1Cc21a17",
+      "txHash": "0x3dda2335a33c0a25039e82906038cac6ca11ce0c527fd158210924d3a0a6b295",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol:61"
+          },
+          {
+            "contract": "ContextUpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\GSN\\Context.sol:37"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:37"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:39"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:41"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:43"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:44"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:45"
+          },
+          {
+            "contract": "ERC20UpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)44_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol:317"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeSafe",
+            "label": "_notEntered",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\utils\\ReentrancyGuard.sol:21"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\utils\\ReentrancyGuard.sol:63"
+          },
+          {
+            "contract": "OwnableUpgradeSafe",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\access\\Ownable.sol:18"
+          },
+          {
+            "contract": "OwnableUpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-ethereum-package\\contracts\\access\\Ownable.sol:78"
+          },
+          {
+            "contract": "Vault",
+            "label": "_IN_EXEC_LOCK",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:62"
+          },
+          {
+            "contract": "Vault",
+            "label": "POSITION_ID",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:64"
+          },
+          {
+            "contract": "Vault",
+            "label": "STRATEGY",
+            "type": "t_address",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:65"
+          },
+          {
+            "contract": "Vault",
+            "label": "token",
+            "type": "t_address",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:73"
+          },
+          {
+            "contract": "Vault",
+            "label": "debtToken",
+            "type": "t_address",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:74"
+          },
+          {
+            "contract": "Vault",
+            "label": "config",
+            "type": "t_contract(IVaultConfig)35314",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:80"
+          },
+          {
+            "contract": "Vault",
+            "label": "positions",
+            "type": "t_mapping(t_uint256,t_struct(Position)6000_storage)",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:81"
+          },
+          {
+            "contract": "Vault",
+            "label": "nextPositionID",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:84"
+          },
+          {
+            "contract": "Vault",
+            "label": "fairLaunchPoolId",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:85"
+          },
+          {
+            "contract": "Vault",
+            "label": "vaultDebtShare",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:86"
+          },
+          {
+            "contract": "Vault",
+            "label": "vaultDebtVal",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:87"
+          },
+          {
+            "contract": "Vault",
+            "label": "lastAccrueTime",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:89"
+          },
+          {
+            "contract": "Vault",
+            "label": "reservePool",
+            "type": "t_uint256",
+            "src": "solidity\\contracts\\6\\protocol\\Vault.sol:89"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_contract(IVaultConfig)35314": {
+            "label": "contract IVaultConfig"
+          },
+          "t_mapping(t_uint256,t_struct(Position)6000_storage)": {
+            "label": "mapping(uint256 => struct Vault.Position)"
+          },
+          "t_struct(Position)6000_storage": {
+            "label": "struct Vault.Position",
+            "members": [
+              {
+                "label": "worker",
+                "type": "t_address"
+              },
+              {
+                "label": "owner",
+                "type": "t_address"
+              },
+              {
+                "label": "debtShare",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_array(t_uint256)44_storage": {
+            "label": "uint256[44]"
           },
           "t_array(t_uint256)50_storage": {
             "label": "uint256[50]"
