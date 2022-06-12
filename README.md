@@ -1,7 +1,5 @@
 # Alpaca Contract
 
-**Leveraged yield farming on BNB Chain and Fantom chain**
-
 ## Local Development
 The following assumes the use of `node@>=14`.  
 ### Install Dependencies
@@ -17,20 +15,25 @@ Note: There will be a new folder called `typechain` generated in your project wo
 ## Testing with Forge
 ### Install Forge
 
-```
-$ curl -L https://foundry.paradigm.xyz | bash # install foundryup
-$ foundryup # install forge and cast
-```
-
 ### Test
 ```
 $ forge test
 ```
 
-## Licensing
-The primary license for Alpaca Protocol is the MIT License, see [MIT LICENSE](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/LICENSE).
+## Contracts
 
-Exceptions
-- Single Asset LYF: `solidity/contracts/6/protocol/workers/CakeMaxiWorker.sol` and all files in `solidity/contracts/6/protocol/strategies/pancakeswapV2-restricted-single-asset` are licensed under Business Source License 1.1 (`BUSL-1.1`) (as indicated in their SPDX headers), see [BUSL-1.1](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/LICENSE_BUSL-1.1)
-- Delta Neutral Vault: All files that match `DeltaNeutral*.sol` and `solidity/contracts/8.13/protocol/AutomatedVaultController.sol`, `solidity/contracts/8.13/protocol/xALPACACreditor.sol` are licensed under Business Source License 1.1 (`BUSL-1.1`) (as indicated in their SPDX headers), see [BUSL-1.1](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/LICENSE_BUSL-1.1)
-- All files in `tests` remain unlicensed.
+ debtibWBNB
+>> Deployed at 0xdD34FC0AB5390AEfa550dCf28CFd8a82B6A05762
+ upgradable Vault contract for LINK-WBNB
+>> Deployed at 0x9CF76779f81f0138ceff00cf39467CF8046De50B
+
+Vault-config 
+upgradable configurableInterestVaultConfig contract
+Deployed at 0x70A8994C904334B955136fBB6eb0a88CeCC1869e
+
+AutomatedController 
+upgradable AutomatedVaultController
+>> Deployed at 0x142CbA43190e25Eaecb004e0ab1C51BCDA2d7390
+>> Deployed block: 20098702
+>> SET AVController to file > 0x142CbA43190e25Eaecb004e0ab1C51BCDA2d7390
+
