@@ -18,11 +18,6 @@ module.exports = {
     },
    
   },
-  namedAccounts: {
-    deployer: {
-      default: 0,
-    },
-  },
   solidity: {
     version: "0.5.16",
     settings: {

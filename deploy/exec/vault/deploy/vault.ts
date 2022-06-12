@@ -85,35 +85,12 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   await debtToken.transferOwnership(vault.address, { nonce: nonce++ });
   console.log("✅ Done");
 
-  timelockTransactions.push(
-    await TimelockService.queueTransaction(
-      "Queue Transaction to add a debtToken pool through Timelock",
-      config.Shield!,
-      "0",
-      "addPool(uint256,address,bool)",
-      ["uint256", "address", "bool"],
-      [ALLOC_POINT_FOR_OPEN_POSITION, debtToken.address, true],
-      EXACT_ETA,
-      { nonce: nonce++ }
-    )
-  );
 
   console.log(">> link pool with vault");
   await vault.setFairLaunchPoolId(DEBT_FAIR_LAUNCH_PID, { gasLimit: "2000000", nonce: nonce++ });
   console.log("✅ Done");
 
-  timelockTransactions.push(
-    await TimelockService.queueTransaction(
-      `>> Queue Transaction to add a ${SYMBOL} pool through Timelock`,
-      config.Shield!,
-      "0",
-      "addPool(uint256,address,bool)",
-      ["uint256", "address", "bool"],
-      [ALLOC_POINT_FOR_DEPOSIT, vault.address, true],
-      EXACT_ETA,
-      { nonce: nonce++ }
-    )
-  );
+
 
   const wNativeRelayer = WNativeRelayer__factory.connect(
     config.SharedConfig.WNativeRelayer,

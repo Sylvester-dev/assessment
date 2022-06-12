@@ -3,3 +3,27 @@ Deploying debtibWBNB
 Deployed at 0x8737A7b11Ea2e41a816AE882210B3D32130cdD1a
 Deploying an upgradable Vault contract for LINK-WBNB
 Deployed at 0xb9EC998E9A9021BDF6aCC3168176765FFF63F488
+
+OR 
+>> Deploying debtibWBNB
+>> Deployed at 0x08F7552c5b312af3c46E53fDA98830678e9f2d73
+>> Deploying an upgradable Vault contract for LINK-WBNB
+>> Deployed at 0xeBb139C2bEF323873B9B993EC44892a80F04439E
+>> Set okHolders on DebtToken to be be Vault
+
+Final
+>> Deploying debtibWBNB
+>> Deployed at 0xdD34FC0AB5390AEfa550dCf28CFd8a82B6A05762
+>> Deploying an upgradable Vault contract for LINK-WBNB
+>> Deployed at 0x9CF76779f81f0138ceff00cf39467CF8046De50B
+
+Vault-config 
+Deploying an upgradable configurableInterestVaultConfig contract
+Deployed at 0x70A8994C904334B955136fBB6eb0a88CeCC1869e
+
+AutomatedController 
+>> Deploying an upgradable AutomatedVaultController
+>> Deployed at 0x142CbA43190e25Eaecb004e0ab1C51BCDA2d7390
+>> Deployed block: 20098702
+✅ Done
+>> SET AVController to file > 0x142CbA43190e25Eaecb004e0ab1C51BCDA2d7390
